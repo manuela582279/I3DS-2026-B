@@ -10,10 +10,7 @@ function App() {
       
       
       
-      <div className='Perfil'>
-  <img src="https://placehold.co/200x200" alt=""/>
-      <p>@Seu Nome</p>
-    </div>
+      
       <div clasName="switch">
         botão switch
         </div>
