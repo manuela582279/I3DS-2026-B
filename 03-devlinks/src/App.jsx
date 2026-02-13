@@ -20,10 +20,10 @@ function App() {
       <ul>
         <Link url={""}>Inscreva-se</Link>
          <Link url={""}>Minha playlist</Link>
-          <Link url={""}>Me pqgue um café!</Link>
+          <Link url={""}>Me pague um café!</Link>
            <Link url={""}>Conheça o Curso DEV</Link>
       </ul>
-      <div className="socialLinks">
+      <div id ="socialLinks">
        
         <SocialLink url={"https://github.com"} icon={"logo-github"} />
          <SocialLink url={"https://instagram.com"} icon={"logo-instagram"} />
