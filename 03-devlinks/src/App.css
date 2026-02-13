@@ -4,11 +4,17 @@
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.4);
-  --switch-bg-url: url(assets/Sun.svg);
+  --switch-bg-url: url(./assets/Sun.svg);
   --highlight-color: rgba(0, 0, 0, 0.2);
 }
 #App {
+  
+  font-family: "Inter",sans-serif;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
   background-image: var(--bg-url);
   background-repeat: np-repeat;
   background-position: top center;
@@ -21,4 +27,14 @@ ul{
     flex-direction: column;
     gap: 16px;
     padding: 24px;
+}
+#SocialLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  & a{
+    color:var(--text-color);
+    font-size:  x-large;
+  }
 }

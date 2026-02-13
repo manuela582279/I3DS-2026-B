@@ -1,4 +1,5 @@
 import React, { Children } from 'react'
+import "./Rodape.module.css"
 
 const Rodape = ({children}) => {
   return (
