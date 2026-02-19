@@ -7,20 +7,23 @@ import Rodape from "./components/Rodape/Rodape";
 const App = () => {
   return (
     <div id="App">
-      <img
-        className="logo"
-        src={logo}
-        alt="Logotipo da plataforma de streaming DEVFLIX em cores vermelha e preta, ideal para quem busca filmes e séries de alta qualidade."
-      />
+      <img className="logo" src={logo} alt="Logotipo da plataforma de streaming Devflix em destaque, com letras vermelhas e pretas, promovendo conteúdo diversificado em streaming." />
 
-      <div className="saerch">
-        <input type="text" placeholder="Pesquise por filmes e séries.." />
-        <img src={lupa} alt="botão para a pesquisa" />
+
+      <div className="search">
+        <input
+          type="text"
+          placeholder="pesquise por filmes e séries..."
+        />
+        <img src={lupa} alt="Botão de ação para pesquisa!" />
 
       </div>
-      <Rodape>Manuela Domingues</Rodape>
+      <Rodape link={"https://github.com/manuela582279"}>Manuela Domingues</Rodape>
     </div>
   );
 };
 
-export default App;
+
+
+
+export default App
