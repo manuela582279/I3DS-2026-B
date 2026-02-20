@@ -9,6 +9,8 @@ import MovieCard from "./components/MovieCard/MovieCard";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
+  const [search, setMovies] = useState("");
+
 
   //Utilizando uma CHAVE de API do arquivo .env
   const apiKey = import.meta.env.VITE_OMDB_API_KEY;
@@ -24,7 +26,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies("Barbie");
+    searchMovies("");
   }, []);
 
   return (
@@ -37,30 +39,25 @@ const App = () => {
 
       <div className="search">
         <input type="text" placeholder="Pesquise por filmes" />
-        <img src={lupa} alt="Botão de ação para pesquisa!" />
+        <img
+          onClick={() => searchMovies("Gossip Girl")}
+          src={lupa}
+          alt="Botão de ação para pesquisa!"
+        />
       </div>
+      {movies?.length > 0 ? (
+        <div className="container">
+          {movies.map((movie, index) => (
+            <MovieCard key={index} {...movie} />
+          ))}
+        </div>
+      ) : (
+        <h2 className="empty">😒 Filme não encontrado</h2>
+      )}
 
-{movies?.length > 0 ? (
-
-<div className="container">
-        {movies.map((movie, index) => (
-          <MovieCard key={index} {...movie} />
-        ))}
-      </div>
-):
-
-(<h2>Filme não encontrado :,( </h2>)
-}
-
-
-
-      <div className="container">
-        {movies.map((movie, index) => (
-          <MovieCard key={index} {...movie} />
-        ))}
-      </div>
-
-      <Rodape link={"https://github.com/manuela582279"}>Manuela Domingues</Rodape>
+      <Rodape link={"https://github.com/manuela582279"}>
+        Manuela Domingues
+      </Rodape>
     </div>
   );
 };
