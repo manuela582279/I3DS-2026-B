@@ -24,8 +24,10 @@ const App = () => {
     setMovies(data.Search);
   };
 
-  useEffect(() => {
-    searchMovies("Barbie"); // termo para pesquina ao carregar o site
+   useEffect(() => {
+    (async () => {
+      await searchMovies("Barbie"); // termo para pesquina ao carregar o site
+    })();
   }, []);
 
   return (
