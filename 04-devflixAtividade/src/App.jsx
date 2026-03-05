@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import logo from "./assets/devflix.png";
+import logo from "./assets/1.png";
 import lupa from "./assets/search.svg";
 
 import Rodape from "./components/Rodape/Rodape";
@@ -24,7 +24,7 @@ const App = () => {
     setMovies(data.Search);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     (async () => {
       await searchMovies("Barbie"); // termo para pesquina ao carregar o site
     })();
@@ -55,13 +55,12 @@ const App = () => {
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie, index) => (
-            <MovieCard key={index} {...movie} />
+            <MovieCard key={index} {...movie} apiUrl={apiUrl} />
           ))}
         </div>
       ) : (
         <h2 className="empty">😢 Filme não encontrado 😢</h2>
       )}
-
 
       <Rodape link={"https://github.com/manuela582279"}>
         Manuela Domingues
