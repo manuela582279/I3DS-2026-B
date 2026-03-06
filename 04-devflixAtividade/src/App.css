@@ -1,30 +1,37 @@
 :root {
-  /* :root -> variáveis de css no tema original projetado */
   --font-raleway: "Raleway", sans-serif;
 
-  /* Light theme (padrão) */
-  --bg-primary: #f5f5f5;
+  /* Dark theme (padrão) */
+  background: linear-gradient(135deg, #800020, #000000);
+  --bg-secondary: #343739;
+  --text-primary: #f5f5f5;
+  --text-secondary: #f0f0f0;
+  --text-placeholder: #a1a1a1;
+  --accent-color: #ffa500;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+
+  /* Variáveis do Switch */
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.15);
+  --switch-bg-url: url("./assets/LUA.png");
+}
+
+.light {
+  background: linear-gradient(135deg, #ffffff, #f3eee6);
   --bg-secondary: #fff;
   --text-primary: #333;
   --text-secondary: #666;
   --text-placeholder: #a1a1a1;
   --accent-color: #ff6b6b;
-  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color: rgba(243, 242, 235, 0.164);
   --shadow: 0px 2px 8px var(--shadow-color);
-}
+  --shadow: 5px 5px 7px #f7eed1, -5px -5px 7px #f7eed1;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Dark theme */
-    --bg-primary: #212426;
-    --bg-secondary: #343739;
-    --text-primary: #f5f5f5;
-    --text-secondary: #f0f0f0;
-    --text-placeholder: #a1a1a1;
-    --accent-color: #ffa500;
-    --shadow-color: rgba(0, 0, 0, 0.4);
-    --shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-  }
+  /* Variáveis do Switch */
+  --stroke-color: rgba(0, 0, 0, 0.25);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url("./assets/SOL.png");
 }
 
 body {
@@ -45,6 +52,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.langButton {
+  position: fixed;
+  top: 16px;
+  right: 96px;
+  z-index: 1000;
+
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
+  color: var(--text-primary);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.langButton:hover {
+  opacity: 0.9;
 }
 
 #Logo {
