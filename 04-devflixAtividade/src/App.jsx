@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 import logo from "./assets/1.png";
-import lupa from "./assets/search.svg";
+import lupa from "./assets/Design sem nome.png";
 
 import Rodape from "./components/Rodape/Rodape";
 import MovieCard from "./components/MovieCard/MovieCard";
