@@ -1,0 +1,32 @@
+body{
+  background-color: antiquewhite;
+ justify-content: center;
+ text-align: center;
+}
+
+
+
+container{
+  display: flex;
+  gap: 20px;
+
+}
+& a {
+  padding: 20px;
+  text-decoration: none;
+  color:
+  #000000
+}
+
+& a:hover{
+  color: rgb(179, 88, 163);
+ 
+}
+
+footer{
+  
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right:0;
+}
