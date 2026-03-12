@@ -1,0 +1,14 @@
+
+import React from "react";
+
+const Rodape = ({ children }) => {
+  return (
+    <footer>
+      <p>
+        Feito com ❤️ por <a href={"https://github.com/manuela582279"} >{children}</a>
+      </p>
+    </footer>
+  );
+};
+
+export default Rodape;
