@@ -1,0 +1,91 @@
+/* CARD */
+.card{
+
+  width: 700px;
+
+  height: 110px;
+
+  background: #2f89b5;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-right: 20px;
+
+  margin-bottom: 20px;
+}
+
+
+/* IMAGEM */
+.image{
+
+  width: 230px;
+
+  height: 110px;
+
+  object-fit: cover;
+}
+
+
+/* INFORMAÇÕES */
+.info{
+
+  flex: 1;
+
+  padding: 20px;
+}
+
+
+/* TÍTULO */
+.info h2{
+
+  color: white;
+
+  font-size: 22px;
+
+  margin-bottom: 8px;
+}
+
+
+/* TEXTO */
+.info p{
+
+  color: #cfd8e3;
+
+  margin-bottom: 10px;
+}
+
+
+/* PREÇO */
+.info span{
+
+  color: #dfff00;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+
+/* BOTÃO */
+.button{
+
+  width: 170px;
+
+  height: 40px;
+
+  background: #79a800;
+
+  border: none;
+
+  border-radius: 5px;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
