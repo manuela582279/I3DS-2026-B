@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import Login from './Login.module.css'
+import sytles from './Login.module.css'
 
 const Login = () => {
   const [nome, setNome] = useState("");
@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container py-5 w-50">
+    <div className={sytles.container}>
       <form onSubmit={handleLogin}>
         <div className="mb-3">
           <label className="form-label" htmlFor="frmNome">
